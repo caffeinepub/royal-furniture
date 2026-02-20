@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        
+        /* Beige/White/Gold Luxury Theme */
+        --background: 0.98 0.01 45;
+        --foreground: 0.25 0.02 30;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.25 0.02 30;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.02 30;
+        
+        --primary: 0.55 0.12 45;
+        --primary-foreground: 1 0 0;
+        
+        --secondary: 0.95 0.01 45;
+        --secondary-foreground: 0.25 0.02 30;
+        
+        --muted: 0.95 0.01 45;
+        --muted-foreground: 0.50 0.02 30;
+        
+        --accent: 0.92 0.02 50;
+        --accent-foreground: 0.25 0.02 30;
+        
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 1 0 0;
+        
+        --border: 0.90 0.01 45;
+        --input: 0.90 0.01 45;
+        --ring: 0.55 0.12 45;
+        
+        --chart-1: 0.55 0.12 45;
+        --chart-2: 0.65 0.15 30;
+        --chart-3: 0.45 0.10 60;
+        --chart-4: 0.70 0.18 40;
+        --chart-5: 0.60 0.14 50;
+        
+        /* Beige shades */
+        --beige-50: 0.98 0.01 45;
+        --beige-100: 0.95 0.02 45;
+        --beige-200: 0.92 0.02 50;
+        --beige-300: 0.88 0.03 50;
+        
+        /* Gold shades */
+        --gold-100: 0.85 0.08 50;
+        --gold-200: 0.75 0.10 48;
+        --gold-300: 0.68 0.11 46;
+        --gold-400: 0.62 0.12 45;
+        --gold-500: 0.58 0.12 45;
+        --gold-600: 0.55 0.12 45;
+        --gold-700: 0.48 0.11 43;
+        
+        /* Luxury dark */
+        --luxury-dark: 0.25 0.02 30;
+    }
+
+    .dark {
+        --background: 0.20 0.02 30;
+        --foreground: 0.98 0.01 45;
+        
+        --card: 0.25 0.02 30;
+        --card-foreground: 0.98 0.01 45;
+        
+        --popover: 0.22 0.02 30;
+        --popover-foreground: 0.98 0.01 45;
+        
+        --primary: 0.55 0.12 45;
+        --primary-foreground: 0.98 0.01 45;
+        
+        --secondary: 0.30 0.02 30;
+        --secondary-foreground: 0.98 0.01 45;
+        
+        --muted: 0.30 0.02 30;
+        --muted-foreground: 0.70 0.02 40;
+        
+        --accent: 0.35 0.03 35;
+        --accent-foreground: 0.98 0.01 45;
+        
+        --destructive: 0.60 0.20 25;
+        --destructive-foreground: 0.98 0.01 45;
+        
+        --border: 0.30 0.02 30;
+        --input: 0.30 0.02 30;
+        --ring: 0.55 0.12 45;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground font-montserrat;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-playfair;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@layer utilities {
+    .font-playfair {
+        font-family: 'Playfair Display', serif;
+    }
+    
+    .font-montserrat {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Luxury divider between sections */
+    .luxury-divider {
+        height: 1px;
+        background: linear-gradient(
+            to right,
+            transparent,
+            oklch(var(--gold-300) / 0.3) 20%,
+            oklch(var(--gold-300) / 0.3) 80%,
+            transparent
+        );
+        margin: 0 auto;
+        max-width: 80%;
+    }
+}
+
+@layer components {
+    /* Hero content animation */
+    .hero-content {
+        animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Luxury shadow variants */
+    .shadow-luxury {
+        box-shadow: 0 4px 20px rgba(139, 116, 78, 0.15);
+    }
+
+    .shadow-luxury-lg {
+        box-shadow: 0 8px 30px rgba(139, 116, 78, 0.25);
+    }
+
+    .hover\:shadow-luxury-lg:hover {
+        box-shadow: 0 8px 30px rgba(139, 116, 78, 0.25);
+    }
+}

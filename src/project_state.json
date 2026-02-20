@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Luxury e-commerce website for Royal Furniture - a premium furniture brand in Guwahati with full shopping cart, wishlist, secure checkout with multiple payment options (UPI, cards, net banking, COD via Razorpay/Stripe), order tracking, and comprehensive admin panel for product and order management",
+  "architectural_notes": [
+    "Tech stack: React/Next.js frontend with Tailwind CSS, Node.js + Express backend, MongoDB database",
+    "Payment gateway: Razorpay or Stripe integration with SSL security",
+    "Hosting: Vercel for frontend, Render/Railway for backend",
+    "SEO optimization and fast loading required for luxury brand perception",
+    "Email service integration needed for order confirmations",
+    "Google Maps API integration for showroom location display"
+  ],
+  "known_issues": [
+    "Home page design does not meet luxury aesthetic standards",
+    "Products not displaying correctly or missing from the site"
+  ],
+  "isFixRequest": true,
+  "imageRequirements": "## Required Images\n- Luxury furniture showroom interior with premium sofas and elegant lighting for hero background (hero-luxury.dim_1920x1080.png)\n- High-end living room setup with designer sofa for sofa category (category-sofa-luxury.dim_600x600.png)\n- Elegant bedroom with premium bed and luxury bedding for beds category (category-beds-luxury.dim_600x600.png)\n- Sophisticated dining room with designer table and chairs for tables category (category-tables-luxury.dim_600x600.png)\n- Premium office setup with luxury office chair for office chair category (category-office-luxury.dim_600x600.png)\n- Elegant dining set in upscale interior for dining sets category (category-dining-luxury.dim_600x600.png)",
+  "existing_features": [
+    {
+      "id": "feature-implement-user-authentication-system-with-registration-and-login-functionality-using-internet-identity-integration",
+      "title": "Implement user authentication system with registration and login functionality using Internet Identity integration",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-shopping-cart-system-with-add-to-cart-remove-from-cart-and-update-quantity-functionality",
+      "title": "Create shopping cart system with add to cart, remove from cart, and update quantity functionality",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-wishlist-feature-allowing-users-to-save-favorite-products",
+      "title": "Implement wishlist feature allowing users to save favorite products",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-secure-checkout-system-with-cart-summary-coupon-application-delivery-address-form-shipping-calculation-and-order-summary",
+      "title": "Build secure checkout system with cart summary, coupon application, delivery address form, shipping calculation, and order summary",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-stripe-payment-gateway-supporting-multiple-payment-methods-with-order-confirmation-and-tracking-functionality",
+      "title": "Integrate Stripe payment gateway supporting multiple payment methods with order confirmation and tracking functionality",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-product-catalog-system-with-categories-sofa-family-sofa-office-chair-tables-beds-dining-sets-including-multiple-images-descriptions-pricing-discount-badges-stock-availability-and-customer-reviews-with-ratings",
+      "title": "Create product catalog system with categories (Sofa, Family Sofa, Office Chair, Tables, Beds, Dining Sets) including multiple images, descriptions, pricing, discount badges, stock availability, and customer reviews with ratings",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-shop-page-with-filtering-by-category-price-range-filtering-and-sorting-options-price-low-to-high-newest-popular-in-a-product-grid-layout",
+      "title": "Build Shop page with filtering by category, price range filtering, and sorting options (price low to high, newest, popular) in a product grid layout",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-product-details-page-with-image-gallery-price-display-description-add-to-cart-and-buy-now-buttons-and-customer-reviews-section",
+      "title": "Create Product Details page with image gallery, price display, description, Add to Cart and Buy Now buttons, and customer reviews section",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-home-page-with-hero-banner-featuring-premium-furniture-imagery-featured-products-section-product-categories-display-why-choose-us-section-customer-testimonials-store-timing-information-open-daily-9am-8pm-embedded-google-map-showing-royal-view-building-dr-bk-kakati-rd-ulubari-guwahati-assam-781007-and-footer-with-royal-furniture-contact-details-91-9864074530-and-facebook-link-https-www-facebook-com-royalfurnitureghy",
+      "title": "Build Home page with hero banner featuring premium furniture imagery, featured products section, product categories display, 'Why Choose Us' section, customer testimonials, store timing information (Open Daily 9AM-8PM), embedded Google Map showing Royal View Building, Dr BK Kakati Rd, Ulubari, Guwahati, Assam 781007, and footer with Royal Furniture contact details (+91 9864074530) and Facebook link (https://www.facebook.com/royalfurnitureghy)",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-about-us-page-displaying-royal-furniture-brand-story-mission-and-vision-statements-and-showroom-introduction",
+      "title": "Create About Us page displaying Royal Furniture brand story, mission and vision statements, and showroom introduction",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-contact-page-with-contact-form-click-to-call-button-for-91-9864074530-business-hours-display-open-all-7-days-9am-8pm-and-embedded-google-map-for-royal-view-building-dr-bk-kakati-rd-ulubari-guwahati-assam-781007",
+      "title": "Build Contact page with contact form, click-to-call button for +91 9864074530, business hours display (Open all 7 days, 9AM-8PM), and embedded Google Map for Royal View Building, Dr BK Kakati Rd, Ulubari, Guwahati, Assam 781007",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-develop-comprehensive-admin-panel-with-secure-authentication-product-management-add-edit-delete-products-with-images-and-details-category-management-order-management-with-status-updates-pending-shipped-delivered-customer-details-view-sales-dashboard-with-analytics-coupon-management-system-and-inventory-management",
+      "title": "Develop comprehensive admin panel with secure authentication, product management (add/edit/delete products with images and details), category management, order management with status updates (Pending, Shipped, Delivered), customer details view, sales dashboard with analytics, coupon management system, and inventory management",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-luxury-premium-ui-design-with-elegant-theme-using-beige-and-white-colors-with-gold-accents-smooth-animations-and-hover-effects-on-interactive-elements-modern-typography-and-fully-responsive-layouts-for-mobile-tablet-and-desktop-viewports",
+      "title": "Implement luxury premium UI design with elegant theme using beige and white colors with gold accents, smooth animations and hover effects on interactive elements, modern typography, and fully responsive layouts for mobile, tablet, and desktop viewports",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-product-display-issues-by-ensuring-products-load-correctly-on-all-pages-home-shop-product-details-with-proper-error-handling-and-loading-states",
+      "title": "Fix product display issues by ensuring products load correctly on all pages (Home, Shop, Product Details) with proper error handling and loading states",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-home-page-hero-section-to-match-luxury-aesthetic-with-premium-typography-elegant-spacing-refined-animations-and-high-end-furniture-imagery",
+      "title": "Redesign Home page hero section to match luxury aesthetic with premium typography, elegant spacing, refined animations, and high-end furniture imagery",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enhance-featured-products-section-with-luxury-card-designs-featuring-elevated-shadows-gold-accent-borders-elegant-hover-transformations-and-refined-product-imagery-presentation",
+      "title": "Enhance featured products section with luxury card designs featuring elevated shadows, gold accent borders, elegant hover transformations, and refined product imagery presentation",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-upgrade-categories-section-with-sophisticated-grid-layout-premium-imagery-for-each-category-elegant-hover-effects-with-opacity-transitions-and-refined-category-labels-with-luxury-typography",
+      "title": "Upgrade categories section with sophisticated grid layout, premium imagery for each category, elegant hover effects with opacity transitions, and refined category labels with luxury typography",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-refine-testimonials-section-with-elevated-card-designs-enhanced-typography-elegant-quotation-marks-styling-refined-customer-photos-or-initials-displays-and-sophisticated-background-treatment",
+      "title": "Refine testimonials section with elevated card designs, enhanced typography, elegant quotation marks styling, refined customer photos or initials displays, and sophisticated background treatment",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-polish-overall-home-page-layout-with-refined-section-transitions-elegant-dividers-or-spacing-between-sections-consistent-luxury-color-palette-application-beige-white-gold-and-enhanced-micro-interactions-throughout",
+      "title": "Polish overall Home page layout with refined section transitions, elegant dividers or spacing between sections, consistent luxury color palette application (beige, white, gold), and enhanced micro-interactions throughout",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "User authentication system with registration and login",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Shopping cart with add/remove/update quantity functionality",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Wishlist feature for saving favorite products",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Secure checkout system with payment integration (Razorpay/Stripe) supporting UPI, cards, net banking, and COD",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Order confirmation email and order tracking status system",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Product catalog with categories (sofas, chairs, tables, beds, dining sets) with multiple images, descriptions, pricing, stock availability, and reviews",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Shop page with filtering by category, price range, and sorting options",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Product details page with image gallery, add to cart, buy now, and customer reviews",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Home page with hero banner, featured products, categories, testimonials, store hours, and location map",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "About Us page with brand story, mission/vision, and showroom introduction",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Contact page with form, click-to-call, business hours, and embedded Google Map",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Admin panel with secure login, product management (add/edit/delete), category management, order management, customer details, order status updates, sales dashboard, coupon management, and inventory management",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Luxury premium UI design with dark/gold or beige/white theme, smooth animations, modern typography, and fully responsive layout",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Royal Furniture",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

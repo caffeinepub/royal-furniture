@@ -1,0 +1,152 @@
+{
+  "kind": "build_request",
+  "title": "Fix product display and enhance home page luxury design",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "text": "Fix product display issues by ensuring products load correctly on all pages (Home, Shop, Product Details) with proper error handling and loading states",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "where is producted"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Products display correctly on Home page featured section",
+        "Products display correctly on Shop page grid",
+        "Product Details page loads individual products without errors",
+        "Loading states show skeleton placeholders while fetching products",
+        "Error states display user-friendly messages if product fetching fails"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Redesign Home page hero section to match luxury aesthetic with premium typography, elegant spacing, refined animations, and high-end furniture imagery",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "the home ppage not look like a luxary"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section features large premium typography with luxury serif font (Playfair Display)",
+        "Background displays high-quality furniture lifestyle imagery",
+        "Elegant fade-in and slide-up animations on page load",
+        "Refined spacing with generous white space and balanced composition",
+        "Call-to-action button styled with gold accents and subtle hover effects"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Enhance featured products section with luxury card designs featuring elevated shadows, gold accent borders, elegant hover transformations, and refined product imagery presentation",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "the home ppage not look like a luxary"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Product cards have subtle elevated shadows and rounded corners",
+        "Cards display thin gold accent borders",
+        "Hover effects include smooth scale transformations and enhanced shadows",
+        "Product images are well-framed with elegant aspect ratios",
+        "Typography uses luxury font stack with proper hierarchy"
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Upgrade categories section with sophisticated grid layout, premium imagery for each category, elegant hover effects with opacity transitions, and refined category labels with luxury typography",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "the home ppage not look like a luxary"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Categories display in balanced grid with consistent spacing",
+        "Each category features high-quality representative imagery",
+        "Hover effects include smooth opacity transitions and subtle overlays",
+        "Category labels use elegant serif typography",
+        "Cards have refined borders and shadows matching luxury aesthetic"
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "text": "Refine testimonials section with elevated card designs, enhanced typography, elegant quotation marks styling, refined customer photos or initials displays, and sophisticated background treatment",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "the home ppage not look like a luxary"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Testimonial cards feature elegant shadows and rounded corners",
+        "Quotation marks styled with gold color and luxury typography",
+        "Customer names and ratings displayed with refined typography",
+        "Section background uses subtle beige gradient or texture",
+        "Card layouts use generous padding and balanced spacing"
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "text": "Polish overall Home page layout with refined section transitions, elegant dividers or spacing between sections, consistent luxury color palette application (beige, white, gold), and enhanced micro-interactions throughout",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "the home ppage not look like a luxary"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Sections separated with elegant spacing or subtle dividers",
+        "Smooth scroll transitions between sections",
+        "Consistent application of beige/white/gold color scheme",
+        "All interactive elements have refined hover states",
+        "Overall layout feels cohesive with luxury brand positioning"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain all existing functionality including authentication, cart, wishlist, and checkout",
+    "Preserve backend API structure and data models",
+    "Keep all read-only UI component sources (hooks/useInternetIdentity.ts, hooks/useActor.ts, main.tsx, components/ui) unchanged",
+    "Maintain responsive design for mobile, tablet, and desktop viewports",
+    "Preserve existing routing structure and navigation"
+  ],
+  "nonGoals": [
+    "Changing the technology stack or framework",
+    "Modifying backend business logic or data structures",
+    "Adding new features beyond fixing display issues and luxury design enhancement",
+    "Changing the color palette beyond refining existing beige/white/gold theme",
+    "Redesigning pages other than the Home page"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Luxury furniture showroom interior with premium sofas and elegant lighting for hero background (hero-luxury.dim_1920x1080.png)",
+      "High-end living room setup with designer sofa for sofa category (category-sofa-luxury.dim_600x600.png)",
+      "Elegant bedroom with premium bed and luxury bedding for beds category (category-beds-luxury.dim_600x600.png)",
+      "Sophisticated dining room with designer table and chairs for tables category (category-tables-luxury.dim_600x600.png)",
+      "Premium office setup with luxury office chair for office chair category (category-office-luxury.dim_600x600.png)",
+      "Elegant dining set in upscale interior for dining sets category (category-dining-luxury.dim_600x600.png)"
+    ],
+    "edits": []
+  }
+}

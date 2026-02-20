@@ -1,0 +1,160 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Fix product display and enhance home page luxury design",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "summary": "Fix product display issues by ensuring products load correctly on all pages with proper error handling and loading states",
+      "acceptanceCriteria": [
+        "Products display correctly on Home page featured section",
+        "Products display correctly on Shop page grid",
+        "Product Details page loads individual products without errors",
+        "Loading states show skeleton placeholders while fetching products",
+        "Error states display user-friendly messages if product fetching fails"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/home/FeaturedProductsSection.tsx",
+          "operation": "modify",
+          "description": "Enhance loading state with proper skeleton placeholders and add comprehensive error handling with user-friendly error messages for product fetch failures. Ensure the useProducts query properly handles loading, error, and success states."
+        },
+        {
+          "path": "frontend/src/pages/ShopPage.tsx",
+          "operation": "modify",
+          "description": "Add robust error handling for product fetching failures with user-friendly error messages. Improve loading state presentation with skeleton placeholders while products are being fetched. Ensure filtered products display correctly."
+        },
+        {
+          "path": "frontend/src/pages/ProductDetailsPage.tsx",
+          "operation": "modify",
+          "description": "Add comprehensive error handling for single product fetching with fallback UI. Implement loading skeleton for product details page. Handle cases where product ID is invalid or product doesn't exist with proper error messages."
+        },
+        {
+          "path": "frontend/src/components/products/ProductCard.tsx",
+          "operation": "modify",
+          "description": "Ensure product images load correctly with fallback handling for missing images. Add error boundary for individual product card failures to prevent entire grid from breaking."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Redesign Home page hero section to match luxury aesthetic with premium typography, elegant spacing, refined animations, and high-end furniture imagery",
+      "acceptanceCriteria": [
+        "Hero section features large premium typography with luxury serif font (Playfair Display)",
+        "Background displays high-quality furniture lifestyle imagery",
+        "Elegant fade-in and slide-up animations on page load",
+        "Refined spacing with generous white space and balanced composition",
+        "Call-to-action button styled with gold accents and subtle hover effects"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/home/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Redesign hero section with luxury aesthetic: implement large premium typography using Playfair Display font, add the generated hero background image (frontend/public/assets/generated/hero-luxury.dim_1920x1080.png), create elegant fade-in and slide-up animations using CSS transitions or Framer Motion, apply generous white space and refined spacing, and style the CTA button with gold accents (#D4AF37) and subtle hover effects with scale transformations."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add custom animation keyframes for fade-in and slide-up effects used in the hero section. Ensure Playfair Display font is properly loaded and applied to hero typography. Add utility classes for luxury spacing if needed."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Enhance featured products section with luxury card designs featuring elevated shadows, gold accent borders, elegant hover transformations, and refined product imagery presentation",
+      "acceptanceCriteria": [
+        "Product cards have subtle elevated shadows and rounded corners",
+        "Cards display thin gold accent borders",
+        "Hover effects include smooth scale transformations and enhanced shadows",
+        "Product images are well-framed with elegant aspect ratios",
+        "Typography uses luxury font stack with proper hierarchy"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/products/ProductCard.tsx",
+          "operation": "modify",
+          "description": "Enhance product card design with luxury aesthetics: add subtle elevated shadows using custom shadow utilities, implement thin gold accent borders (#D4AF37 with 1-2px width), create smooth hover transformations with scale effects (scale-105) and enhanced shadow on hover, ensure product images use elegant aspect ratios (e.g., aspect-square or 4:3), and apply luxury font stack with Playfair Display for product names and proper typographic hierarchy."
+        },
+        {
+          "path": "frontend/src/components/home/FeaturedProductsSection.tsx",
+          "operation": "modify",
+          "description": "Update featured products section container with refined spacing, elegant section title using Playfair Display, and ensure proper grid layout that showcases the enhanced luxury product cards with generous gutters."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Add custom shadow utilities for luxury elevated shadows (e.g., luxury-sm, luxury-md, luxury-lg) and ensure gold color (#D4AF37) is properly defined in the color palette for consistent usage across components."
+        }
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "summary": "Upgrade categories section with sophisticated grid layout, premium imagery for each category, elegant hover effects with opacity transitions, and refined category labels with luxury typography",
+      "acceptanceCriteria": [
+        "Categories display in balanced grid with consistent spacing",
+        "Each category features high-quality representative imagery",
+        "Hover effects include smooth opacity transitions and subtle overlays",
+        "Category labels use elegant serif typography",
+        "Cards have refined borders and shadows matching luxury aesthetic"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/home/CategoriesSection.tsx",
+          "operation": "modify",
+          "description": "Redesign categories section with luxury aesthetic: implement balanced grid layout with consistent spacing, integrate generated category images (frontend/public/assets/generated/category-sofa-luxury.dim_600x600.png, category-beds-luxury.dim_600x600.png, category-tables-luxury.dim_600x600.png, category-office-luxury.dim_600x600.png, category-dining-luxury.dim_600x600.png), add smooth opacity transitions on hover with subtle dark overlays, style category labels with Playfair Display serif font, and apply refined borders with gold accents and luxury shadows matching the product cards."
+        }
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "summary": "Refine testimonials section with elevated card designs, enhanced typography, elegant quotation marks styling, refined customer photos or initials displays, and sophisticated background treatment",
+      "acceptanceCriteria": [
+        "Testimonial cards feature elegant shadows and rounded corners",
+        "Quotation marks styled with gold color and luxury typography",
+        "Customer names and ratings displayed with refined typography",
+        "Section background uses subtle beige gradient or texture",
+        "Card layouts use generous padding and balanced spacing"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/home/TestimonialsSection.tsx",
+          "operation": "modify",
+          "description": "Enhance testimonials section with luxury design: add elegant shadows and rounded corners to testimonial cards, style quotation marks with gold color (#D4AF37) using a large serif font or decorative icon, display customer names with Playfair Display and star ratings with refined styling, apply subtle beige gradient or texture to section background, and implement generous padding with balanced spacing in card layouts."
+        }
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "summary": "Polish overall Home page layout with refined section transitions, elegant dividers or spacing between sections, consistent luxury color palette application, and enhanced micro-interactions throughout",
+      "acceptanceCriteria": [
+        "Sections separated with elegant spacing or subtle dividers",
+        "Smooth scroll transitions between sections",
+        "Consistent application of beige/white/gold color scheme",
+        "All interactive elements have refined hover states",
+        "Overall layout feels cohesive with luxury brand positioning"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Polish overall home page layout: add elegant spacing or subtle decorative dividers between sections, implement smooth scroll behavior for section transitions, ensure consistent application of beige/white/gold color palette throughout all sections, verify all interactive elements have refined hover states, and create visual cohesion that reinforces luxury brand positioning."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add global styles for smooth scrolling behavior, define reusable luxury divider classes or decorative elements, and ensure consistent color variable application for beige (#F5F1E8), white, and gold (#D4AF37) throughout the application."
+        },
+        {
+          "path": "frontend/src/components/layout/Header.tsx",
+          "operation": "modify",
+          "description": "Ensure header maintains luxury aesthetic with refined hover states on navigation links, consistent gold accent application, and elegant transitions that complement the redesigned home page."
+        },
+        {
+          "path": "frontend/src/components/layout/Footer.tsx",
+          "operation": "modify",
+          "description": "Ensure footer maintains luxury aesthetic with refined typography using appropriate font hierarchy, consistent color palette application, and elegant spacing that complements the redesigned home page."
+        }
+      ]
+    }
+  ]
+}
